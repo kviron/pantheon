@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="859f5b2d-20d6-4321-9741-8f1969f038dd" name="Changes" comment="" />
+    <list default="true" id="859f5b2d-20d6-4321-9741-8f1969f038dd" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/ToggleFeatures/ToggleFeatures.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/setGetFeatures.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/toggleFeatures.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -27,35 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Web/pantheon/src/renderer/src/shared/api&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev --sourcemap --remote-debugging-port=9222.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Web\\pantheon\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:5173.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Web/pantheon/src/renderer/src/shared/lib",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev --sourcemap --remote-debugging-port=9222.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Web\\pantheon\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Web\pantheon\src\renderer\src\shared\lib" />
       <recent name="C:\Web\pantheon\src\renderer\src\shared\api" />
       <recent name="C:\Web\pantheon\src\renderer\src\widgets" />
       <recent name="C:\Web\pantheon\src\renderer\src\shared\ui\Button" />
       <recent name="C:\Web\pantheon\src\renderer\src\features" />
-      <recent name="C:\Web\pantheon\src\renderer\src\shared\types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Web\pantheon\src\renderer\src\shared\lib" />
@@ -66,6 +82,9 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev --sourcemap --remote-debugging-port=9222">
+    <configuration name="localhost:5173" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5173/">
+      <method v="2" />
+    </configuration>
     <configuration name="dev --sourcemap --remote-debugging-port=9222" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,6 +117,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.localhost:5173" />
       <item itemvalue="npm.dev --sourcemap --remote-debugging-port=9222" />
       <item itemvalue="npm.lint" />
       <item itemvalue="npm.start" />
@@ -105,6 +125,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev --sourcemap --remote-debugging-port=9222" />
+        <item itemvalue="JavaScript Debug.localhost:5173" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.start" />
       </list>
@@ -132,10 +153,25 @@
       <workItem from="1715878870989" duration="5304000" />
       <workItem from="1715900857724" duration="2618000" />
       <workItem from="1715926952052" duration="153000" />
+      <workItem from="1715934949313" duration="634000" />
+      <workItem from="1715936354765" duration="614000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1715935207980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715935207980</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>
