@@ -1,5 +1,4 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit'
-import { CombinedState, Reducer } from 'redux'
 import { userReducer } from '@/entities/User'
 import { $api } from '@/shared/api/api'
 import { uiReducer } from '@/features/UI'
@@ -24,12 +23,12 @@ export function createReduxStore(
     api: $api
   }
 
-  const store = configureStore({
-    reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
+  const store = configureStore<StateSchema>({
+    reducer: reducerManager.reduce,
     devTools: __IS_DEV__,
     preloadedState: initialState,
-    middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({
+    middleware: (gDM) =>
+      gDM({
         thunk: {
           extraArgument: extraArg
         }

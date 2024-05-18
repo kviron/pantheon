@@ -19,7 +19,7 @@
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "electron-vite build && electron-builder --mac",
     "build:linux": "electron-vite build && electron-builder --linux",
-    "test": "jest"
+    "test:unit": "vite-jest --config ./config/jest/jest.config.ts"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
@@ -33,10 +33,13 @@
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
     "@electron-toolkit/eslint-config-prettier": "^2.0.0",
     "@electron-toolkit/eslint-config-ts": "^1.0.1",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@eslint/js": "^9.2.0",
+    "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@types/jest": "^29.5.12",
     "@types/node": "^18.19.9",

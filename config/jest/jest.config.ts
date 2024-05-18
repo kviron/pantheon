@@ -11,6 +11,8 @@ const config: Config = {
     __API__: '',
     __PROJECT__: 'jest',
   },
+  preset: 'vite-jest',
+  rootDir: '../../',
   clearMocks: true,
   testPathIgnorePatterns: [
     "\\\\node_modules\\\\"

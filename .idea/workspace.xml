@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="859f5b2d-20d6-4321-9741-8f1969f038dd" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/ToggleFeatures/ToggleFeatures.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/setGetFeatures.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/src/shared/lib/features/toggleFeatures.ts" afterDir="false" />
+    <list default="true" id="859f5b2d-20d6-4321-9741-8f1969f038dd" name="Changes" comment="Добавил Error">
+      <change afterPath="$PROJECT_DIR$/config/jest/setupTest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest/jest.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/StateSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/StateSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/reducerManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/reducerManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/app/providers/StoreProvider/config/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/src/env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/src/env.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Мамаев Роман &lt;kviron.web.dev@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -44,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.localhost:5173.executor": "Debug",
+    "Jest.Button.Test render.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -55,11 +61,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Web/pantheon/node_modules/jest",
     "nodejs_package_manager_path": "npm",
+    "npm.build:win.executor": "Run",
     "npm.dev --sourcemap --remote-debugging-port=9222.executor": "Run",
     "npm.dev.executor": "Run",
     "npm.lint.executor": "Run",
     "npm.start.executor": "Run",
+    "npm.test:unit.executor": "Run",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "C:\\Web\\pantheon\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -74,15 +83,38 @@
       <recent name="C:\Web\pantheon\src\renderer\src\features" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Web\pantheon\config\jest" />
       <recent name="C:\Web\pantheon\src\renderer\src\shared\lib" />
       <recent name="C:\Web\pantheon\src\renderer\src\app\providers\ConfigProvider" />
       <recent name="C:\Web\pantheon\src\renderer\src\app\providers\ThemeProvider\config" />
       <recent name="C:\Web\pantheon\src\renderer\src\app\providers\ThemeProvider" />
-      <recent name="C:\Web\pantheon\src\renderer\src\shared\const" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev --sourcemap --remote-debugging-port=9222">
+  <component name="RunManager" selected="npm.test:unit">
+    <configuration name="Button.Test render" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/renderer/src/shared/ui/Button/Button.test.tsx" />
+      <test-names>
+        <test-name value="Button" />
+        <test-name value="Test render" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="localhost:5173" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:5173/">
+      <method v="2" />
+    </configuration>
+    <configuration name="build:win" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:win" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="dev --sourcemap --remote-debugging-port=9222" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -96,21 +128,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test:unit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
+        <script value="test:unit" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -118,16 +140,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.localhost:5173" />
+      <item itemvalue="Jest.Button.Test render" />
+      <item itemvalue="npm.build:win" />
+      <item itemvalue="npm.test:unit" />
       <item itemvalue="npm.dev --sourcemap --remote-debugging-port=9222" />
-      <item itemvalue="npm.lint" />
-      <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:unit" />
+        <item itemvalue="Jest.Button.Test render" />
+        <item itemvalue="npm.build:win" />
         <item itemvalue="npm.dev --sourcemap --remote-debugging-port=9222" />
         <item itemvalue="JavaScript Debug.localhost:5173" />
-        <item itemvalue="npm.lint" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +178,10 @@
       <workItem from="1715900857724" duration="2618000" />
       <workItem from="1715926952052" duration="153000" />
       <workItem from="1715934949313" duration="634000" />
-      <workItem from="1715936354765" duration="614000" />
+      <workItem from="1715936354765" duration="1102000" />
+      <workItem from="1715937490140" duration="5000" />
+      <workItem from="1715958904010" duration="615000" />
+      <workItem from="1715984564131" duration="6036000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -164,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715935207980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Поправил конфиг, и провайдеры">
+      <option name="closed" value="true" />
+      <created>1715937447398</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715937447398</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавил Error">
+      <option name="closed" value="true" />
+      <created>1715986724155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715986724155</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +215,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="Поправил конфиг, и провайдеры" />
+    <MESSAGE value="Добавил Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил Error" />
   </component>
 </project>
