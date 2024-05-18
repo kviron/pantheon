@@ -6,10 +6,13 @@ import { AppEditPage } from '@/pages/AppEditPage'
 import { AppCreatePage } from '@/pages/AppCreatePage'
 import { ForbiddenPage } from '@/pages/ForbiddenPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
-import { LibraryPage } from '../../../../pages/LibraryPage'
-import { AppRoutes, getRouteForbidden, getRouteMain, getRouteProfile } from '@/shared/const/router'
+import { LibraryPage } from '@/pages/LibraryPage'
 import { AppRoutesProps } from '@/shared/types/router'
 import {
+  AppRoutes,
+  getRouteForbidden,
+  getRouteMain,
+  getRouteProfile,
   getRouteAppCreate,
   getRouteAppDetails,
   getRouteAppEdit,
@@ -18,7 +21,7 @@ import {
   getRouteLibrary,
   getRouteRegister,
   getRouteSettings
-} from '../../../../shared/const/router'
+} from '@/shared/const/router'
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
   [AppRoutes.MAIN]: {

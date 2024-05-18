@@ -8,7 +8,7 @@ const MainPage = () => {
     <Page data-testid="MainPage">
       Главная страница
       <Link to={routeConfig.apps.path ?? ''}>
-        <Button>Кнопка</Button>
+        <Button type="primary">Кнопка</Button>
       </Link>
     </Page>
   )

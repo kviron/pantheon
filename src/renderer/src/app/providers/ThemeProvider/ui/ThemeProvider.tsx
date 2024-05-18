@@ -17,7 +17,7 @@ export function ThemeProvider({ children, initialTheme }: ConfigProviderProps) {
   const [theme, setTheme] = useState<Theme>(initialTheme || Theme.DARK)
 
   useEffect(() => {
-    if (!isThemeInited && Theme.DARK) {
+    if (!isThemeInited) {
       setTheme(Theme.DARK)
       setThemeInited(true)
     }
