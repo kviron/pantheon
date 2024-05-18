@@ -1,28 +1,27 @@
 import { ConfigProvider as AntdConfigProvider } from 'antd'
+import { ReactNode, useEffect, useMemo, useState } from 'react'
 import { themeDark } from '../config/themeDark'
 import { themeLight } from '../config/themeLight'
-import { ReactNode, useEffect, useMemo, useState } from 'react'
 import { Theme } from '@/shared/const/theme'
-import { useJsonSettings } from '../../../../entities/User'
 import { ThemeContext } from '@/shared/lib/context/ThemeContext'
+import { BgWrapper } from './BgWrapper'
 
 type ConfigProviderProps = {
   initialTheme?: Theme
   children: ReactNode
 }
 
-export const ThemeProvider = ({ children, initialTheme }: ConfigProviderProps) => {
-  const { theme: defaultTheme } = useJsonSettings()
+export function ThemeProvider({ children, initialTheme }: ConfigProviderProps) {
   const [isThemeInited, setThemeInited] = useState(false)
 
-  const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme || Theme.LIGHT)
+  const [theme, setTheme] = useState<Theme>(initialTheme || Theme.DARK)
 
   useEffect(() => {
-    if (!isThemeInited && defaultTheme) {
-      setTheme(defaultTheme)
+    if (!isThemeInited && Theme.DARK) {
+      setTheme(Theme.DARK)
       setThemeInited(true)
     }
-  }, [defaultTheme, isThemeInited])
+  }, [isThemeInited])
 
   const defaultProps = useMemo(
     () => ({
@@ -35,7 +34,7 @@ export const ThemeProvider = ({ children, initialTheme }: ConfigProviderProps) =
   return (
     <ThemeContext.Provider value={defaultProps}>
       <AntdConfigProvider theme={theme === Theme.LIGHT ? themeLight : themeDark}>
-        {children}
+        <BgWrapper>{children}</BgWrapper>
       </AntdConfigProvider>
     </ThemeContext.Provider>
   )
