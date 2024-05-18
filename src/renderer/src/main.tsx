@@ -6,15 +6,18 @@ import App from './app/App'
 import { HashRouter } from 'react-router-dom'
 import { ThemeProvider } from '@/app/providers/ThemeProvider'
 import { ErrorBoundary } from '@/app/providers/ErrorBoundary'
+import { StoreProvider } from './app/providers/StoreProvider'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <HashRouter>
-      <ErrorBoundary>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </ErrorBoundary>
-    </HashRouter>
+    <StoreProvider>
+      <HashRouter>
+        <ErrorBoundary>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </ErrorBoundary>
+      </HashRouter>
+    </StoreProvider>
   </React.StrictMode>
 )
