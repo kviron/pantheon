@@ -4,20 +4,20 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './app/App'
 import { HashRouter } from 'react-router-dom'
-import { StoreProvider } from '@/app/providers/StoreProvider'
 import { ThemeProvider } from '@/app/providers/ThemeProvider'
 import { ErrorBoundary } from '@/app/providers/ErrorBoundary'
+import { StoreProvider } from './app/providers/StoreProvider'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <HashRouter>
-      <ErrorBoundary>
-        <StoreProvider>
+    <StoreProvider>
+      <HashRouter>
+        <ErrorBoundary>
           <ThemeProvider>
             <App />
           </ThemeProvider>
-        </StoreProvider>
-      </ErrorBoundary>
-    </HashRouter>
+        </ErrorBoundary>
+      </HashRouter>
+    </StoreProvider>
   </React.StrictMode>
 )
