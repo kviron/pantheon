@@ -41,6 +41,7 @@ module.exports = {
     "no-prototype-builtins": "off",
     "no-useless-escape": "off",
     "react/display-name": "off",
+    'no-shadow': 'off',
     "react/jsx-no-undef": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",

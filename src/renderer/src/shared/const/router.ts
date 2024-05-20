@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-shadow
 export enum AppRoutes {
   MAIN = 'main',
   PROFILE = 'profile',
@@ -25,3 +26,17 @@ export const getRouteAppEdit = (id: string) => `/apps/${id}/edit`
 export const getRouteAuth = () => '/auth'
 export const getRouteRegister = () => '/registration'
 export const getRouteForbidden = () => '/forbidden'
+
+export const AppRouteByPathPattern: Record<string, AppRoutes> = {
+  [getRouteMain()]: AppRoutes.MAIN,
+  [getRouteSettings()]: AppRoutes.SETTINGS,
+  [getRouteLibrary()]: AppRoutes.LIBRARY,
+  [getRouteProfile(':id')]: AppRoutes.PROFILE,
+  [getRouteApps()]: AppRoutes.APPS,
+  [getRouteAppDetails(':id')]: AppRoutes.APP_DETAILS,
+  [getRouteAppCreate()]: AppRoutes.APP_CREATE,
+  [getRouteAppEdit(':id')]: AppRoutes.APP_EDIT,
+  [getRouteAuth()]: AppRoutes.AUTH,
+  [getRouteRegister()]: AppRoutes.REGISTRATION,
+  [getRouteForbidden()]: AppRoutes.FORBIDDEN
+}
